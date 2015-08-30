@@ -1,18 +1,28 @@
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+
+.margin-top-05 { margin-top: 0.5em; }
+.margin-top-10 { margin-top: 1.0em; }
+.margin-top-15 { margin-top: 1.5em; }
+.margin-top-20 { margin-top: 2.0em; }
+.margin-top-25 { margin-top: 2.5em; }
+.margin-top-30 { margin-top: 3.0em; }
+
 #mainChessBoard {
-    width:250px;
-    height:250px;
     border:1px solid black;
 }
-div {
-    width:50px;
-    height:50px;
-    float:left;
-}
 .square {
+    width:40px;
+    height:40px;
+    float:left;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: Tahoma
+    font-family: Tahoma;
+    box-sizing: border-box;
 }
 .black {
     background: #ababab
@@ -22,8 +32,13 @@ div {
 }
 .clicked {
 }
+.candidate {
+}
 .candidate:after {
     content:"x";
     color: pink
+}
+.candidate:hover {
+    border:5px solid #999999;
 }
 

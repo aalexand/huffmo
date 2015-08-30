@@ -1,12 +1,42 @@
 <html>
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Knight Tour</title>
-  <script type='text/javascript' src='//code.jquery.com/jquery-1.6.4.js'></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <script type='text/javascript' src='knighttour.js'></script>
 </head>
 <body>
-<div id="mainChessBoard"></div>
+  <div class="container">
+    <div class="page-header">
+      <h1>Knight's Tour</h1>
+    </div>
+    <div class="row">
+      <div class="col-lg-4">
+        Your goal is to visit all squares of a board with a knight moving it like it
+        moves in chess game.  You can start in any square.
+      </div>
+      <div class="col-lg-8">
+        <div id="mainChessBoard"></div>
+      </div>
+    </div>
+    <div class="row margin-top-10">
+      <div class="col-lg-12">
+        <a class="btn btn-primary"
+            href="javascript:window.location.reload(true)">Start over</a>
+        <div class="btn-group">
+          <a class="btn btn-default" href=".?r=3&c=3">Use 3x3 board</a>
+          <a class="btn btn-default" href=".?r=4&c=4">Use 4x4 board</a>
+          <a class="btn btn-default" href=".?r=5&c=5">Use 5x5 board</a>
+          <a class="btn btn-default" href=".?r=8&c=8">Use 8x8 board</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script type='text/javascript' src='knighttour.js'></script>
 </body>
 </html>
